@@ -8,7 +8,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAngularApp", policy =>
     {
-        policy.WithOrigins("http://localhost:4200") // Angular frontend's URL
+        policy.WithOrigins("https://excel-sum-frontend.vercel.app/") // Angular frontend's URL
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
